@@ -1,8 +1,9 @@
 import { Provider } from 'react-redux';
 import store from 'redux-store/store';
+import { Home } from 'components/pages';
 
 export const App = () => (
 	<Provider store={store}>
-		<h1>App</h1>
+		<Home />
 	</Provider>
 );
