@@ -29,3 +29,14 @@ export const addUser = createAsyncThunk<IUser, Omit<IUser, 'id'>>(
 		return data;
 	}
 );
+
+export const loginUser = createAsyncThunk<IUser[], Omit<IUser, 'id'>>(
+	'users/loginUser',
+	async ({ userName, password }) => {
+		const { data } = await axiosInstance.get<IUser[]>(
+			`/users?userName=${userName}&pasword=${password}`
+		);
+
+		return data;
+	}
+);
