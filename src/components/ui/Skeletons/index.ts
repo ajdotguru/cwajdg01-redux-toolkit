@@ -1,1 +1,1 @@
-export * from './PostsSkeleton'
+export * from './PostsSkeleton';
