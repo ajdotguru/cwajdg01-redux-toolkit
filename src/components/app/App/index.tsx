@@ -12,7 +12,7 @@ export const App = () => (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
 			<Header />
-			<Container maxWidth="lg">
+			<Container maxWidth="lg" sx={{ marginTop: '25px' }}>
 				<AppRoutes />
 			</Container>
 		</ThemeProvider>
